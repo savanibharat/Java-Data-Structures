@@ -7,6 +7,7 @@ public class TheStack {
 	private String[] stackArray;
 	private int stackSize;
 	private int topOfStack=-1;
+	private String s;
 	
 	public TheStack(int size){
 		
@@ -15,7 +16,7 @@ public class TheStack {
 		Arrays.fill(stackArray,"-1");
 		
 	}
-	
+
 	public void push(String input){
 		
 		if(topOfStack+1<stackSize){
