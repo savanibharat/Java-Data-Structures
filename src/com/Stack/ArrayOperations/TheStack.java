@@ -7,7 +7,6 @@ public class TheStack {
 	private String[] stackArray;
 	private int stackSize;
 	private int topOfStack=-1;
-	private String s;
 	
 	public TheStack(int size){
 		
