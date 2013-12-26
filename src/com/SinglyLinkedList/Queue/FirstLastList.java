@@ -24,7 +24,7 @@ public class FirstLastList {
 		else 
 			last.next=newLink;
 		last=newLink;
-		
+				
 	}
 	public int deleteFirst(){
 		
