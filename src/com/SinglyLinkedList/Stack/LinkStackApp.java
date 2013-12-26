@@ -5,6 +5,7 @@ public class LinkStackApp {
 	public static void main(String args[]){
 		
 		LinkStack linkStack=new LinkStack();
+		
 		linkStack.push((short)10);
 		linkStack.push((short)20);
 		linkStack.push((short)30);
