@@ -28,7 +28,7 @@ public class HashTable {
 	}
 	public int hashFunction(int key){
 		System.out.println("Hash Function output "+key%arraySize);
-		return key%arraySize;
+		return key%arraySize; 
 		
 	}
 	public void insert(DataItem item){
