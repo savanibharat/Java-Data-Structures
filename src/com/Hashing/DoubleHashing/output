@@ -1,0 +1,242 @@
+
+hashVal for 1 is 1
+stepSize for 1 is 4
+
+** 1 ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** 
+
+hashVal for 38 is 15
+stepSize for 38 is 2
+
+** 1 ** ** ** ** ** ** ** ** ** ** ** ** ** 38 ** ** ** ** ** ** ** 
+
+hashVal for 37 is 14
+stepSize for 37 is 3
+
+** 1 ** ** ** ** ** ** ** ** ** ** ** ** 37 38 ** ** ** ** ** ** ** 
+
+hashVal for 16 is 16
+stepSize for 16 is 4
+
+** 1 ** ** ** ** ** ** ** ** ** ** ** ** 37 38 16 ** ** ** ** ** ** 
+
+hashVal for 20 is 20
+stepSize for 20 is 5
+
+** 1 ** ** ** ** ** ** ** ** ** ** ** ** 37 38 16 ** ** ** 20 ** ** 
+
+hashVal for 3 is 3
+stepSize for 3 is 2
+
+** 1 ** 3 ** ** ** ** ** ** ** ** ** ** 37 38 16 ** ** ** 20 ** ** 
+
+hashVal for 11 is 11
+stepSize for 11 is 4
+
+** 1 ** 3 ** ** ** ** ** ** ** 11 ** ** 37 38 16 ** ** ** 20 ** ** 
+
+hashVal for 24 is 1
+stepSize for 24 is 1
+
+
+collision for key 24
+New (hashVal+=stepSize) for 24 is 2
+New (hashVal%=arraySize) for 24 is 2
+
+** 1 24 3 ** ** ** ** ** ** ** 11 ** ** 37 38 16 ** ** ** 20 ** ** 
+
+hashVal for 5 is 5
+stepSize for 5 is 5
+
+** 1 24 3 ** 5 ** ** ** ** ** 11 ** ** 37 38 16 ** ** ** 20 ** ** 
+
+hashVal for 16 is 16
+stepSize for 16 is 4
+
+
+collision for key 16
+New (hashVal+=stepSize) for 16 is 20
+New (hashVal%=arraySize) for 16 is 20
+
+
+collision for key 16
+New (hashVal+=stepSize) for 16 is 24
+New (hashVal%=arraySize) for 16 is 1
+
+
+collision for key 16
+New (hashVal+=stepSize) for 16 is 5
+New (hashVal%=arraySize) for 16 is 5
+
+
+collision for key 16
+New (hashVal+=stepSize) for 16 is 9
+New (hashVal%=arraySize) for 16 is 9
+
+** 1 24 3 ** 5 ** ** ** 16 ** 11 ** ** 37 38 16 ** ** ** 20 ** ** 
+
+hashVal for 10 is 10
+stepSize for 10 is 5
+
+** 1 24 3 ** 5 ** ** ** 16 10 11 ** ** 37 38 16 ** ** ** 20 ** ** 
+
+hashVal for 31 is 8
+stepSize for 31 is 4
+
+** 1 24 3 ** 5 ** ** 31 16 10 11 ** ** 37 38 16 ** ** ** 20 ** ** 
+
+hashVal for 18 is 18
+stepSize for 18 is 2
+
+** 1 24 3 ** 5 ** ** 31 16 10 11 ** ** 37 38 16 ** 18 ** 20 ** ** 
+
+hashVal for 12 is 12
+stepSize for 12 is 3
+
+** 1 24 3 ** 5 ** ** 31 16 10 11 12 ** 37 38 16 ** 18 ** 20 ** ** 
+
+hashVal for 30 is 7
+stepSize for 30 is 5
+
+** 1 24 3 ** 5 ** 30 31 16 10 11 12 ** 37 38 16 ** 18 ** 20 ** ** 
+
+hashVal for 1 is 1
+stepSize for 1 is 4
+
+
+collision for key 1
+New (hashVal+=stepSize) for 1 is 5
+New (hashVal%=arraySize) for 1 is 5
+
+
+collision for key 1
+New (hashVal+=stepSize) for 1 is 9
+New (hashVal%=arraySize) for 1 is 9
+
+
+collision for key 1
+New (hashVal+=stepSize) for 1 is 13
+New (hashVal%=arraySize) for 1 is 13
+
+** 1 24 3 ** 5 ** 30 31 16 10 11 12 1 37 38 16 ** 18 ** 20 ** ** 
+
+hashVal for 19 is 19
+stepSize for 19 is 1
+
+** 1 24 3 ** 5 ** 30 31 16 10 11 12 1 37 38 16 ** 18 19 20 ** ** 
+
+hashVal for 36 is 13
+stepSize for 36 is 4
+
+
+collision for key 36
+New (hashVal+=stepSize) for 36 is 17
+New (hashVal%=arraySize) for 36 is 17
+
+** 1 24 3 ** 5 ** 30 31 16 10 11 12 1 37 38 16 36 18 19 20 ** ** 
+
+hashVal for 41 is 18
+stepSize for 41 is 4
+
+
+collision for key 41
+New (hashVal+=stepSize) for 41 is 22
+New (hashVal%=arraySize) for 41 is 22
+
+** 1 24 3 ** 5 ** 30 31 16 10 11 12 1 37 38 16 36 18 19 20 ** 41 
+
+hashVal for 15 is 15
+stepSize for 15 is 5
+
+
+collision for key 15
+New (hashVal+=stepSize) for 15 is 20
+New (hashVal%=arraySize) for 15 is 20
+
+
+collision for key 15
+New (hashVal+=stepSize) for 15 is 25
+New (hashVal%=arraySize) for 15 is 2
+
+
+collision for key 15
+New (hashVal+=stepSize) for 15 is 7
+New (hashVal%=arraySize) for 15 is 7
+
+
+collision for key 15
+New (hashVal+=stepSize) for 15 is 12
+New (hashVal%=arraySize) for 15 is 12
+
+
+collision for key 15
+New (hashVal+=stepSize) for 15 is 17
+New (hashVal%=arraySize) for 15 is 17
+
+
+collision for key 15
+New (hashVal+=stepSize) for 15 is 22
+New (hashVal%=arraySize) for 15 is 22
+
+
+collision for key 15
+New (hashVal+=stepSize) for 15 is 27
+New (hashVal%=arraySize) for 15 is 4
+
+** 1 24 3 15 5 ** 30 31 16 10 11 12 1 37 38 16 36 18 19 20 ** 41 
+
+hashVal for 25 is 2
+stepSize for 25 is 5
+
+
+collision for key 25
+New (hashVal+=stepSize) for 25 is 7
+New (hashVal%=arraySize) for 25 is 7
+
+
+collision for key 25
+New (hashVal+=stepSize) for 25 is 12
+New (hashVal%=arraySize) for 25 is 12
+
+
+collision for key 25
+New (hashVal+=stepSize) for 25 is 17
+New (hashVal%=arraySize) for 25 is 17
+
+
+collision for key 25
+New (hashVal+=stepSize) for 25 is 22
+New (hashVal%=arraySize) for 25 is 22
+
+
+collision for key 25
+New (hashVal+=stepSize) for 25 is 27
+New (hashVal%=arraySize) for 25 is 4
+
+
+collision for key 25
+New (hashVal+=stepSize) for 25 is 9
+New (hashVal%=arraySize) for 25 is 9
+
+
+collision for key 25
+New (hashVal+=stepSize) for 25 is 14
+New (hashVal%=arraySize) for 25 is 14
+
+
+collision for key 25
+New (hashVal+=stepSize) for 25 is 19
+New (hashVal%=arraySize) for 25 is 19
+
+
+collision for key 25
+New (hashVal+=stepSize) for 25 is 24
+New (hashVal%=arraySize) for 25 is 1
+
+
+collision for key 25
+New (hashVal+=stepSize) for 25 is 6
+New (hashVal%=arraySize) for 25 is 6
+
+** 1 24 3 15 5 25 30 31 16 10 11 12 1 37 38 16 36 18 19 20 ** 41 
+
+** 1 24 3 15 5 25 30 31 16 10 11 12 1 37 38 16 36 18 19 20 ** 41 

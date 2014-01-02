@@ -1,8 +1,6 @@
 Java-Data-Structures
 ====================
 Sorting--Insertion Sort
-
-
 ---------Selection Sort
 ---------Bubble Sort
 
@@ -23,6 +21,7 @@ Search--Linear Search
 --------Binary Search
 
 Hashing--Linear Probing
+Hashing--Double Hashing
 
 Queue--WrapAroundQueue
 
