@@ -1,11 +1,16 @@
 package com.Hashing.LinearProbing;
 
-public class DataItem {
-	public int iData;
-	
-	public DataItem(int i){
+public class DataItem
+{
+	private int iData;
+	public DataItem(int iData){
 		
-		iData=i;
+		this.iData=iData;
+		
+	}
+	public int getKey(){
+		
+		return iData;
 		
 	}
 }

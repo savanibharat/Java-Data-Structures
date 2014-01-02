@@ -1,46 +1,49 @@
 package com.Hashing.LinearProbing;
 
-public class HashTable {
-
+public class HashTable
+{
+	
 	DataItem[] hashArray;
-	int arraySize;
-	DataItem nonItem;
+	DataItem nonDataItem;
+	private int arraySize;
 	
 	public HashTable(int size){
 		
-		arraySize=size;
-		hashArray=new DataItem[arraySize];
-		nonItem=new DataItem(-1);
-		
+		this.arraySize=size;
+		hashArray=new DataItem[this.arraySize];
+		nonDataItem=new DataItem(-1); //indicates that a cell is empty ; used in case for deletion
+	
 	}
-	public void displayTable(){
+	
+	public void display(){
 		
-		System.out.println("Table: ");
 		for (int i = 0; i < arraySize; i++) {
 			
 			if(hashArray[i]!=null)
-				System.out.print(hashArray[i].iData+" ");
+				System.out.print(hashArray[i].getKey()+" ");
 			else
 				System.out.print("** ");
-			
 		}
+		System.out.println();
 		System.out.println();
 	}
 	public int hashFunction(int key){
-		System.out.println("Hash Function output "+key%arraySize);
-		return key%arraySize; 
+		
+		return key%arraySize;
 		
 	}
 	public void insert(DataItem item){
-		//assumes table is full
 		
-		int key=item.iData;
+		int key=item.getKey();
+		
 		int hashVal=hashFunction(key);
-		while(hashArray[hashVal]!=null && hashArray[hashVal].iData!=-1){
-			System.out.println("in insert hashVal is "+hashVal);
+		System.out.println("hashVal in insert function is "+hashVal);
+		
+		while(hashArray[hashVal]!=null && hashArray[hashVal].getKey()!=-1){
+			
 			++hashVal;
-			System.out.println("hashVal%=arraySize is "+(hashVal%=arraySize));
 			hashVal%=arraySize;
+			System.out.println("Collision for key "+key);
 			
 		}
 		hashArray[hashVal]=item;
@@ -51,15 +54,14 @@ public class HashTable {
 		int hashVal=hashFunction(key);
 		while(hashArray[hashVal]!=null){
 			
-			if(hashArray[hashVal].iData==key){
+			if(hashArray[hashVal].getKey()==key){
 				
-				DataItem temp= hashArray[hashVal];
-				hashArray[hashVal]=nonItem;
-				return temp;
-				
+				DataItem item=hashArray[hashVal];
+				hashArray[hashVal]=nonDataItem;
+				return item;
 			}
-			++hashVal;// go to next cell
-			hashVal%=arraySize;//wraparound if possible
+			++hashVal;
+			hashVal%=arraySize;
 		}
 		return null;
 	}
@@ -68,14 +70,12 @@ public class HashTable {
 		int hashVal=hashFunction(key);
 		while(hashArray[hashVal]!=null){
 			
-			if(hashArray[hashVal].iData==key)
+			if(hashArray[hashVal].getKey()==key)
 				return hashArray[hashVal];
+			
 			++hashVal;
 			hashVal%=arraySize;
-		
 		}
 		return null;
 		}
-		
-	}
-
+}
