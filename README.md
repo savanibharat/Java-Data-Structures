@@ -1,12 +1,8 @@
 Java-Data-Structures
 ====================
-Sorting--Insertion Sort
----------Selection Sort
----------Bubble Sort
+Sorting (Insertion Sort | Selection Sort | Bubble Sort)
 
-SinglyLinkedList
-
-DoubleEndedLinkedList
+Linked List (SinglyLinkedList | DoubleEndedLinkedList)
 
 ArrayOperations
 
@@ -14,23 +10,15 @@ Stack(Array and LinkList)
 Stack Delimiter Matching
 Stack String Reverse
 
-
 Queue(Array and LinkList)
 
-Search--Linear Search
---------Binary Search
+Search  (Linear Search | Binary Search)
 
-Hashing--Linear Probing
-Hashing--Double Hashing
+Hashing (Linear Probing | Double Hashing |  Separate Hashing)
 
 Queue--WrapAroundQueue
 
-Recursion--Binary Search Tree
------------Binary Search
------------Merge Sort
------------Quick Sort
------------Towers of Hanoi(3)
------------Triangle application
+Recursion  (Binary Search Tree | Binary Search | Merge Sort | Quick Sort | Towers of Hanoi(3) | Triangle application)
 
 2-3-4 Trees
 

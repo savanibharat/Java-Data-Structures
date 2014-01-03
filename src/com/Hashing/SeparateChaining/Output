@@ -108,8 +108,7 @@ akey is 53
 7. List {first-->last}: 17 
 8. List {first-->last}: 
 9. List {first-->last}: 9 
-
-
+akey is 7
 0. List {first-->last}: 
 1. List {first-->last}: 1 
 2. List {first-->last}: 
@@ -117,6 +116,183 @@ akey is 53
 4. List {first-->last}: 4 
 5. List {first-->last}: 5 
 6. List {first-->last}: 6 16 
-7. List {first-->last}: 17 
+7. List {first-->last}: 7 17 
 8. List {first-->last}: 
 9. List {first-->last}: 9 
+akey is 177
+0. List {first-->last}: 
+1. List {first-->last}: 1 
+2. List {first-->last}: 
+3. List {first-->last}: 13 23 53 
+4. List {first-->last}: 4 
+5. List {first-->last}: 5 
+6. List {first-->last}: 6 16 
+7. List {first-->last}: 7 17 177 
+8. List {first-->last}: 
+9. List {first-->last}: 9 
+akey is 166
+0. List {first-->last}: 
+1. List {first-->last}: 1 
+2. List {first-->last}: 
+3. List {first-->last}: 13 23 53 
+4. List {first-->last}: 4 
+5. List {first-->last}: 5 
+6. List {first-->last}: 6 16 166 
+7. List {first-->last}: 7 17 177 
+8. List {first-->last}: 
+9. List {first-->last}: 9 
+akey is 133
+0. List {first-->last}: 
+1. List {first-->last}: 1 
+2. List {first-->last}: 
+3. List {first-->last}: 13 23 53 133 
+4. List {first-->last}: 4 
+5. List {first-->last}: 5 
+6. List {first-->last}: 6 16 166 
+7. List {first-->last}: 7 17 177 
+8. List {first-->last}: 
+9. List {first-->last}: 9 
+akey is 2
+0. List {first-->last}: 
+1. List {first-->last}: 1 
+2. List {first-->last}: 2 
+3. List {first-->last}: 13 23 53 133 
+4. List {first-->last}: 4 
+5. List {first-->last}: 5 
+6. List {first-->last}: 6 16 166 
+7. List {first-->last}: 7 17 177 
+8. List {first-->last}: 
+9. List {first-->last}: 9 
+akey is 4
+0. List {first-->last}: 
+1. List {first-->last}: 1 
+2. List {first-->last}: 2 
+3. List {first-->last}: 13 23 53 133 
+4. List {first-->last}: 4 4 
+5. List {first-->last}: 5 
+6. List {first-->last}: 6 16 166 
+7. List {first-->last}: 7 17 177 
+8. List {first-->last}: 
+9. List {first-->last}: 9 
+akey is 7
+0. List {first-->last}: 
+1. List {first-->last}: 1 
+2. List {first-->last}: 2 
+3. List {first-->last}: 13 23 53 133 
+4. List {first-->last}: 4 4 
+5. List {first-->last}: 5 
+6. List {first-->last}: 6 16 166 
+7. List {first-->last}: 7 7 17 177 
+8. List {first-->last}: 
+9. List {first-->last}: 9 
+akey is 98
+0. List {first-->last}: 
+1. List {first-->last}: 1 
+2. List {first-->last}: 2 
+3. List {first-->last}: 13 23 53 133 
+4. List {first-->last}: 4 4 
+5. List {first-->last}: 5 
+6. List {first-->last}: 6 16 166 
+7. List {first-->last}: 7 7 17 177 
+8. List {first-->last}: 98 
+9. List {first-->last}: 9 
+akey is 43
+0. List {first-->last}: 
+1. List {first-->last}: 1 
+2. List {first-->last}: 2 
+3. List {first-->last}: 13 23 43 53 133 
+4. List {first-->last}: 4 4 
+5. List {first-->last}: 5 
+6. List {first-->last}: 6 16 166 
+7. List {first-->last}: 7 7 17 177 
+8. List {first-->last}: 98 
+9. List {first-->last}: 9 
+akey is 59
+0. List {first-->last}: 
+1. List {first-->last}: 1 
+2. List {first-->last}: 2 
+3. List {first-->last}: 13 23 43 53 133 
+4. List {first-->last}: 4 4 
+5. List {first-->last}: 5 
+6. List {first-->last}: 6 16 166 
+7. List {first-->last}: 7 7 17 177 
+8. List {first-->last}: 98 
+9. List {first-->last}: 9 59 
+akey is 47
+0. List {first-->last}: 
+1. List {first-->last}: 1 
+2. List {first-->last}: 2 
+3. List {first-->last}: 13 23 43 53 133 
+4. List {first-->last}: 4 4 
+5. List {first-->last}: 5 
+6. List {first-->last}: 6 16 166 
+7. List {first-->last}: 7 7 17 47 177 
+8. List {first-->last}: 98 
+9. List {first-->last}: 9 59 
+akey is 6
+0. List {first-->last}: 
+1. List {first-->last}: 1 
+2. List {first-->last}: 2 
+3. List {first-->last}: 13 23 43 53 133 
+4. List {first-->last}: 4 4 
+5. List {first-->last}: 5 
+6. List {first-->last}: 6 6 16 166 
+7. List {first-->last}: 7 7 17 47 177 
+8. List {first-->last}: 98 
+9. List {first-->last}: 9 59 
+akey is 5
+0. List {first-->last}: 
+1. List {first-->last}: 1 
+2. List {first-->last}: 2 
+3. List {first-->last}: 13 23 43 53 133 
+4. List {first-->last}: 4 4 
+5. List {first-->last}: 5 5 
+6. List {first-->last}: 6 6 16 166 
+7. List {first-->last}: 7 7 17 47 177 
+8. List {first-->last}: 98 
+9. List {first-->last}: 9 59 
+akey is 29
+0. List {first-->last}: 
+1. List {first-->last}: 1 
+2. List {first-->last}: 2 
+3. List {first-->last}: 13 23 43 53 133 
+4. List {first-->last}: 4 4 
+5. List {first-->last}: 5 5 
+6. List {first-->last}: 6 6 16 166 
+7. List {first-->last}: 7 7 17 47 177 
+8. List {first-->last}: 98 
+9. List {first-->last}: 9 29 59 
+akey is 4
+0. List {first-->last}: 
+1. List {first-->last}: 1 
+2. List {first-->last}: 2 
+3. List {first-->last}: 13 23 43 53 133 
+4. List {first-->last}: 4 4 4 
+5. List {first-->last}: 5 5 
+6. List {first-->last}: 6 6 16 166 
+7. List {first-->last}: 7 7 17 47 177 
+8. List {first-->last}: 98 
+9. List {first-->last}: 9 29 59 
+akey is 65
+0. List {first-->last}: 
+1. List {first-->last}: 1 
+2. List {first-->last}: 2 
+3. List {first-->last}: 13 23 43 53 133 
+4. List {first-->last}: 4 4 4 
+5. List {first-->last}: 5 5 65 
+6. List {first-->last}: 6 6 16 166 
+7. List {first-->last}: 7 7 17 47 177 
+8. List {first-->last}: 98 
+9. List {first-->last}: 9 29 59 
+
+
+0. List {first-->last}: 
+1. List {first-->last}: 1 
+2. List {first-->last}: 2 
+3. List {first-->last}: 13 23 43 53 133 
+4. List {first-->last}: 4 4 4 
+5. List {first-->last}: 5 5 65 
+6. List {first-->last}: 6 6 16 166 
+7. List {first-->last}: 7 7 17 47 177 
+8. List {first-->last}: 98 
+9. List {first-->last}: 9 29 59 

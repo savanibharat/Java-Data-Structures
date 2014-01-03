@@ -20,6 +20,7 @@ public class SortedList {
 			current=current.next;
 			
 		}
+		
 		if(previous==null)
 			first=theLink;
 		else

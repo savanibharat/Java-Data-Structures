@@ -8,8 +8,8 @@ public class HashChainApp {
 		HashTable theHashTable=new HashTable(10);
 		int aKey;
 		Link theLink;
-		int a[]={1,6,5,4,9,13,16,17,23,53};
-		for(int j=0; j<10; j++) // insert data
+		int a[]={1,6,5,4,9,13,16,17,23,53,7,177,166,133,2,4,7,98,43,59,47,6,5,29,4,65};
+		for(int j=0; j<a.length; j++) // insert data
 		{
 		//aKey = (int)(java.lang.Math.random() *size);
 			aKey=a[j];
@@ -23,7 +23,6 @@ public class HashChainApp {
 		System.out.println();
 		System.out.println();
 		theHashTable.displayTable();
-		
 		
 	}
 }
