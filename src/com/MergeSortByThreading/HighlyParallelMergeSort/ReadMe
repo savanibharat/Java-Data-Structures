@@ -1,0 +1,21 @@
+This program uses much more memory then you can think of.
+
+Look at the snapshot that I have provided in this package "ThreadingtaskUsage.png".
+
+If your heap size is less you will get this error java.lang.OutOfMemoryError: Java heap space
+
+You can change heap size from Run Configurations (http://stackoverflow.com/questions/9816214/about-out-of-memory-exception)
+			
+			normally its java -Xms5m -Xmx15m MyApp -Xms set initial Java heap size -Xmx set maximum Java heap size
+
+			and in eclipse under java run configuration as VM argument -Xms128m
+
+			-Xmx512m
+		
+			-XX:permSize=128M
+
+			-XX:MaxPermSize=384M
+			
+A word of advice
+
+	Whenever you are using too much memory you must know what your are using and what you are dealing with.

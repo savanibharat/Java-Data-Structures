@@ -1,0 +1,64 @@
+
+Current RUNS is 1
+
+      1000 elements  =>       9 ms 
+
+Current RUNS is 2
+
+      2000 elements  =>      23 ms 
+
+Current RUNS is 3
+
+      4000 elements  =>      11 ms 
+
+Current RUNS is 4
+
+      8000 elements  =>      50 ms 
+
+Current RUNS is 5
+
+     16000 elements  =>      16 ms 
+
+Current RUNS is 6
+
+     32000 elements  =>      13 ms 
+
+Current RUNS is 7
+
+     64000 elements  =>      21 ms 
+
+Current RUNS is 8
+
+    128000 elements  =>      44 ms 
+
+Current RUNS is 9
+
+    256000 elements  =>      74 ms 
+
+Current RUNS is 10
+
+    512000 elements  =>     140 ms 
+
+Current RUNS is 11
+
+   1024000 elements  =>     274 ms 
+
+Current RUNS is 12
+
+   2048000 elements  =>     690 ms 
+
+Current RUNS is 13
+
+   4096000 elements  =>    1237 ms 
+
+Current RUNS is 14
+
+   8192000 elements  =>    2311 ms 
+
+Current RUNS is 15
+
+  16384000 elements  =>    4465 ms 
+
+Current RUNS is 16
+
+  32768000 elements  =>    8876 ms 

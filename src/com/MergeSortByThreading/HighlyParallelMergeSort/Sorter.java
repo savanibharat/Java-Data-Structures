@@ -1,4 +1,4 @@
-package com.Threading.HighlyParallelMergeSort;
+package com.MergeSortByThreading.HighlyParallelMergeSort;
 
 
 // CSE 373, Winter 2013, Marty Stepp
