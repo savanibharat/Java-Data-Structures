@@ -1,6 +1,6 @@
 Java-Data-Structures
 ====================
-Sorting (Insertion Sort | Selection Sort | Bubble Sort)
+Sorting (Insertion Sort | Selection Sort | Bubble Sort | Highly Parallel Merge Sort(ReadMe.md))
 
 Linked List (SinglyLinkedList | DoubleEndedLinkedList)
 
