@@ -1,0 +1,5 @@
+Printing normal array :: 89 45 30 75 26 93 95 68 46 68 
+
+Printing Heap :: 95 75 93 68 68 89 30 45 46 26 
+Printing Sorted elements :: 
+26 30 45 46 68 68 75 89 93 95 
