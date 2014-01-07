@@ -26,4 +26,4 @@ String Permutation using recursion and ArrayList
 
 Arranging Data in Heap
 
-Graph (DFS)
+Graph (DFS (Stack) |BFS (Queue) )
