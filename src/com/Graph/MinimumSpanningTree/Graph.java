@@ -1,11 +1,12 @@
-package com.Graph.DepthFirstSearch;
+package com.Graph.MinimumSpanningTree;
 
 // TODO: Auto-generated Javadoc
+//TODO: Auto-generated Javadoc
 /**
- * The Class Graph.
- *
- * @author Savani Bharat
- */
+* The Class Graph.
+*
+* @author Savani Bharat
+*/
 public class Graph {
 
 	/** The max verts. */
@@ -89,31 +90,34 @@ public class Graph {
 	}
 	
 	/**
-	 * Dfs.
+	 * Minimum Spanning tree.
 	 */
-	public void dfs(){
-		
+	public void minimumSpanningTree(){
+	
 		vertexList[0].wasVisited=true;
-		displayVertex(0);
 		theStack.push(0);
 		
 		while(!theStack.isEmpty()){
-			//get an  unvisited vertex adjacent to stack top
-			int v=getAdjUnvisitedVertex(theStack.peek());
+			
+			int currentVertex=theStack.peek();
+			//get next unvisited neighbor
+			int v=getAdjUnvisitedVertex(currentVertex);
 			if(v==-1)
 				theStack.pop();
-			else{
+			else
+			{
 				
 				vertexList[v].wasVisited=true;
-				displayVertex(v);
 				theStack.push(v);
+				
+				displayVertex(currentVertex);
+				displayVertex(v);
+				System.out.println(" ");
 			}
 		}
-		//stack is empty so we are done
-		for (int j = 0; j < nVerts; j++) {
-			
-			vertexList[j].wasVisited=false;//reset flags
-			
-		}
+			for (int i = 0; i < nVerts; i++) {
+				
+				vertexList[i].wasVisited=false;
+			}
 	}
 }
