@@ -26,4 +26,4 @@ String Permutation using recursion and ArrayList
 
 Arranging Data in Heap
 
-Graph (DFS (Stack) |BFS (Queue) | Minimum Spanning Tree(Undirected Graph) | Topological Sorting )
+Graph (DFS (Stack) |BFS (Queue) | Minimum Spanning Tree(Undirected Graph, Prim's Algorithm) | Topological Sorting | )
