@@ -1,5 +1,9 @@
 package com.CTCI.Programs;
 
+/**
+ * @author Savani Bharat
+ *
+ */
 public class UniqueCharacters {
 
 	public static void main(String[] args) {
@@ -11,7 +15,6 @@ public class UniqueCharacters {
 	}
 
 	public static boolean isUniqueChar(String str) {
-
 
 		boolean char_set[] = new boolean[256];
 		for (int i = 0; i < str.length(); i++) {
