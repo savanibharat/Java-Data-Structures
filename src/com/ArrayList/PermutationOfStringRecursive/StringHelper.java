@@ -16,7 +16,7 @@ public class StringHelper {
 		char initial = s.charAt(0); // first character
 		String rem = s.substring(1); // Full string without first character
 		
-		System.out.println("rem ="+rem);
+		//System.out.println("rem ="+rem);
 		
 		ArrayList<String> words = PermutationFinder(rem);
 		for (String str : words) {
@@ -39,7 +39,7 @@ public class StringHelper {
 
 	public static void main(String[] args) {
 		
-		String s = "Bharat";
+		String s = "abcdefgh";
 		ArrayList<String> value = PermutationFinder(s);
 		System.out.println(value.size());
 		System.out.println("\nThe Permutations are : \n" + value);

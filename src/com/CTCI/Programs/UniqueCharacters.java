@@ -27,7 +27,6 @@ public class UniqueCharacters {
 			}
 		}
 		return true;
-
 	}
 
 }
