@@ -1,0 +1,57 @@
+raleigh
+durham
+raleigh
+raleigh
+chapelhill
+raleigh
+fayetteville
+fayetteville
+durham
+hillsboro
+durham
+mebane
+burlington
+mebane
+pittsboro
+raleigh
+sanford
+greensboro
+winston
+winston
+greensboro
+asheboro
+asheboro
+asheboro
+greensboro
+concord
+asheboro
+pinehurst
+siler
+siler
+siler
+pittsboro
+siler
+siler
+roxboro
+hillsboro
+-1
+Dijkstra's Algorithm
+raleigh        Cost: 0       raleigh
+durham         Cost: 20      raleigh --> durham
+chapelhill     Cost: 25      raleigh --> chapelhill
+hillsboro      Cost: 32      raleigh --> durham --> hillsboro
+roxboro        Cost: 35      raleigh --> durham --> roxboro
+pittsboro      Cost: 37      raleigh --> pittsboro
+mebane         Cost: 41      raleigh --> durham --> hillsboro --> mebane
+burlington     Cost: 45      raleigh --> durham --> hillsboro --> mebane --> burlington
+sanford        Cost: 47      raleigh --> sanford
+siler          Cost: 48      raleigh --> pittsboro --> siler
+fayetteville   Cost: 50      raleigh --> fayetteville
+asheboro       Cost: 66      raleigh --> pittsboro --> siler --> asheboro
+pinehurst      Cost: 69      raleigh --> fayetteville --> pinehurst
+greensboro     Cost: 70      raleigh --> durham --> hillsboro --> mebane --> burlington --> greensboro
+concord        Cost: 76      raleigh --> pittsboro --> siler --> concord
+winston        Cost: 86      raleigh --> pittsboro --> siler --> asheboro --> winston
+charlotte      Cost: 93      raleigh --> pittsboro --> siler --> concord --> charlotte
+statesville    Cost: 103     raleigh --> pittsboro --> siler --> asheboro --> statesville
+boone          Cost: 157     raleigh --> pittsboro --> siler --> asheboro --> winston --> boone

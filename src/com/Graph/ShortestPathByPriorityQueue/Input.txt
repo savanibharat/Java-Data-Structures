@@ -1,0 +1,47 @@
+raleigh durham 20
+durham chapelhill 8
+raleigh chapelhill 25
+raleigh fayetteville 50
+chapelhill pittsboro 19
+raleigh pittsboro 37
+fayetteville pinehurst 19
+fayetteville sanford 17
+durham hillsboro 12
+hillsboro mebane 9
+durham roxboro 15
+mebane burlington 4
+burlington greensboro 25
+mebane pittsboro 19
+pittsboro sanford 13
+raleigh sanford 47
+sanford pinehurst 27
+greensboro winston 20
+winston statesville 43
+winston boone 71
+greensboro asheboro 21
+asheboro charlotte 41
+asheboro winston 20
+asheboro statesville 37
+greensboro concord 42
+concord charlotte 17
+asheboro pinehurst 52
+pinehurst charlotte 34
+siler pinehurst 43
+siler sanford 17
+siler concord 28
+pittsboro siler 11
+siler asheboro 18
+siler greensboro 24
+roxboro hillsboro 21
+hillsboro chapelhill 16
+-1
+raleigh
+
+0  1  50 
+0  3  80
+1  2  60
+1  3  90
+2  4  40
+3  2  20
+3  4  70
+4  1  50
