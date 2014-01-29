@@ -10,23 +10,48 @@ public class Tree {
 
 	}
 
-	public Node find(int key) {
-		
-		Node current=root;
-		while(current.iData!=key){
-			
-			if(current.iData>key)
-				current=current.leftChild;
-			else
-				current=current.rightChild;
-			
-			if(current==null)
-				return null;
+	public Node findMin(Node node) {
+		if (node != null) {
+			while (node.leftChild != null) {
+				return findMin(node.leftChild);
+			}
 		}
-		return current;
+		return node;
 	}
 
-	public void insert(int id) {
+	
+	
+	  public Node delete(Node node, int value)
+	  {
+	      if (node.iData > value)
+	      {
+	          node.leftChild = delete(node.leftChild, value);
+	      }
+	      else if(node.iData < value)
+	      {
+	          node.rightChild = delete(node.rightChild, value);
+	      }
+	      else
+	      {
+	          if (node.middleChild != null)
+	          {
+	              node.middleChild = delete(node.middleChild, value);
+	          }
+	          else if(node.rightChild != null)
+	          {
+	              int min = findMin(node.rightChild).iData;
+	              node.iData = min;
+	              node.rightChild = delete(node.rightChild, min);
+	          }
+	          else
+	          {
+	              node = node.leftChild;
+	          }
+	      }
+	      return node;
+	  }
+
+	public Node insert(int id) {
 
 		Node newNode = new Node();
 		newNode.iData = id;
@@ -45,32 +70,33 @@ public class Tree {
 					current = current.leftChild;
 					if (current == null) {
 						parent.leftChild = newNode;
-						return;
+						return newNode;
 					}
 				}
-				
-				else if(id > current.iData) {
+
+				else if (id > current.iData) {
 
 					current = current.rightChild;
 					if (current == null) {
 
 						parent.rightChild = newNode;
-						return;
+						return newNode;
 
 					}
 				}
-				
-				else{
-					
-					current=current.middleChild;
-					if(current==null){
-						
-						parent.middleChild=newNode;
-						return;
+
+				else {
+
+					current = current.middleChild;
+					if (current == null) {
+
+						parent.middleChild = newNode;
+						return newNode;
 					}
 				}
 			}
 		}
+		return null;
 
 	}
 
@@ -91,85 +117,5 @@ public class Tree {
 
 		}
 	}
-	public boolean delete(int key){
-		
-		Node current=root;
-		Node parent=root;
-		boolean isLeftChild=true;
-		
-		while(current.iData!=key){
-			
-			parent=current;
-			if(key<current.iData){
-				
-				isLeftChild=true;
-				current=current.leftChild;
-			}
-			else{
-				
-				isLeftChild=false;
-				current=current.rightChild;
-				
-			}
-			if(current==null)
-				return false;
-			
-		}
-		//If no childer simply delete it
-		if(current.leftChild==null && current.rightChild==null){
-			
-			if(current==root)
-				root=null;
-			else if(isLeftChild)
-				parent.leftChild=null; //disconnect from parent
-			else
-				parent.rightChild=null;
-		}
-		//if no right child replace with left subtree
-		else if(current.rightChild==null)
-			if(current==root)
-				root=current.leftChild;
-			else if(isLeftChild)
-				parent.leftChild=current.leftChild;
-			else
-				parent.rightChild=current.leftChild;
-		
-		else//two children so replace with inorder successor
-		{
-			//getSuccessor of node to delete(current)
-			Node successor=getSuccessor(current);
-			//connect parent of current to successor instead
-			if(current==root)
-				root=successor;
-			else if(isLeftChild)
-				parent.leftChild=successor;
-			else
-				parent.rightChild=successor;
-			//connect successor to current's left child
-			successor.leftChild=current.leftChild;
-		}
-		return true;
-		}
-		private Node getSuccessor(Node delNode){
-			
-			Node successorParent=delNode;
-			Node successor = delNode;
-			Node current=delNode.rightChild;//go to right child 
-			while(current!=null){           //till no more left children found 
-				
-				successorParent=successor;
-				successor=current;
-				current=current.leftChild; // go to left child
-				
-			}
-			if(successor!=delNode.rightChild){
-				
-				successorParent.leftChild=successor.rightChild;
-				successor.rightChild=delNode.rightChild;
-				
-			}
-			return successor;
-			
-			
-	}
+
 }
