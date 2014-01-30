@@ -26,6 +26,9 @@ public class FirstNonRepeatingChar {
 		}}
 	}
 }
+
+
+
 /*
  * // returns nil char (0) if no unique matches found
 public static char firstUniqueCharacter(String text) {
