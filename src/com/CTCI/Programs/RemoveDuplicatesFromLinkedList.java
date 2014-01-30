@@ -6,10 +6,10 @@ public class RemoveDuplicatesFromLinkedList {
 	
 	public static void main(String[] args) {
 		
-		removeDups(LinkedList node);
+	//	removeDups(LinkedList node);
 		
 	}
-	public static void removeDups(LinkedList n){
+/*	public static void removeDups(LinkedList n){
 		
 		Hashtable table=new HashTable();//remember we have used a buffer for this
 		LinkedListNode previous=null;
@@ -24,5 +24,5 @@ public class RemoveDuplicatesFromLinkedList {
 			}
 		}
 		n=n.next;
-	}
+	}*/
 }
