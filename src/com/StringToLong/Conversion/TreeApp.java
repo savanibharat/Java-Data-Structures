@@ -16,7 +16,7 @@ public class TreeApp {
 		theTree.insert(20);
 		theTree.traverse();
 		theTree.delete(node, 15);
-		System.out.println();
+		System.out.println("After deletion");
 		System.out.println();
 		theTree.traverse();
 		
