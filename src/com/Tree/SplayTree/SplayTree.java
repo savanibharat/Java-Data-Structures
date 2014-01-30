@@ -3,49 +3,43 @@ package com.Tree.SplayTree;
 import com.StringToLong.Conversion.Node;
 
 public class SplayTree {
-
 	private BinaryNode root;
 
 	public SplayTree() {
-
 		root = null;
 	}
 
-	/*
-	 * Insert into the tree
+	/**
+	 * Insert into the tree.
 	 * 
-	 * @param x the item to insert
+	 * @param x
+	 *            the item to insert.
+	 * @throws DuplicateItemException
+	 *             if x is already present.
 	 */
 	public void insert(Comparable key) {
-
 		BinaryNode n;
 		int c;
 		if (root == null) {
-
 			root = new BinaryNode(key);
 			return;
 		}
 		splay(key);
 		if ((c = key.compareTo(root.key)) == 0) {
-
 			// throw new DuplicateItemException(x.toString());
 			return;
 		}
 		n = new BinaryNode(key);
 		if (c < 0) {
-
 			n.left = root.left;
 			n.right = root;
 			root.left = null;
 		} else {
-
 			n.right = root.right;
 			n.left = root;
 			root.right = null;
-
 		}
 		root = n;
-
 	}
 
 	/**
@@ -56,22 +50,17 @@ public class SplayTree {
 	 * @throws ItemNotFoundException
 	 *             if x is not found.
 	 */
-
 	public void remove(Comparable key) {
-
 		BinaryNode x;
 		splay(key);
 		if (key.compareTo(root.key) != 0) {
-
+			// throw new ItemNotFoundException(x.toString());
 			return;
 		}
 		// Now delete the root
 		if (root.left == null) {
-
 			root = root.right;
-
 		} else {
-
 			x = root.right;
 			root = root.left;
 			splay(key);
@@ -79,8 +68,10 @@ public class SplayTree {
 		}
 	}
 
+	/**
+	 * Find the smallest item in the tree.
+	 */
 	public Comparable findMin() {
-
 		BinaryNode x = root;
 		if (root == null)
 			return null;
@@ -90,8 +81,10 @@ public class SplayTree {
 		return x.key;
 	}
 
+	/**
+	 * Find the largest item in the tree.
+	 */
 	public Comparable findMax() {
-
 		BinaryNode x = root;
 		if (root == null)
 			return null;
@@ -101,8 +94,10 @@ public class SplayTree {
 		return x.key;
 	}
 
+	/**
+	 * Find an item in the tree.
+	 */
 	public Comparable find(Comparable key) {
-
 		if (root == null)
 			return null;
 		splay(key);
@@ -111,46 +106,49 @@ public class SplayTree {
 		return root.key;
 	}
 
+	/**
+	 * Test if the tree is logically empty.
+	 * 
+	 * @return true if empty, false otherwise.
+	 */
 	public boolean isEmpty() {
-
 		return root == null;
 	}
 
-	private static BinaryNode header = new BinaryNode(null); // For splay
-
+	/**
+	 * this method just illustrates the top-down method of implementing the
+	 * move-to-root operation
+	 */
 	private void moveToRoot(Comparable key) {
-
 		BinaryNode l, r, t, y;
 		l = r = header;
 		t = root;
 		header.left = header.right = null;
 		for (;;) {
-
 			if (key.compareTo(t.key) < 0) {
-
 				if (t.left == null)
 					break;
-				r.left = t;
+				r.left = t; /* link right */
 				r = t;
 				t = t.left;
-			} else if (key.compareTo(t.key) < 0) {
-
+			} else if (key.compareTo(t.key) > 0) {
 				if (t.right == null)
 					break;
-				l.right = t;
+				l.right = t; /* link left */
 				l = t;
 				t = t.right;
 			} else {
 				break;
 			}
-
 		}
-		l.right = t.left;
+		l.right = t.left; /* assemble */
 		r.left = t.right;
 		t.left = header.right;
 		t.right = header.left;
 		root = t;
 	}
+
+	private static BinaryNode header = new BinaryNode(null); // For splay
 
 	/**
 	 * Internal method to perform a top-down splay.
@@ -164,6 +162,7 @@ public class SplayTree {
 	 * larger than any in the tree, the rightmost node of the tree becomes the
 	 * root. This property is used in the delete() method.
 	 */
+
 	private void splay(Comparable key) {
 		BinaryNode l, r, t, y;
 		l = r = header;
@@ -226,14 +225,10 @@ public class SplayTree {
 		}
 	}
 
-	
-	
 	public static void main(String[] args) {
 
-		SplayTree t=new SplayTree();
-		final int nums=40000;
-		final int gap=307;
-		
+		SplayTree t = new SplayTree();
+
 		t.insert(10);
 		t.insert(5);
 		t.insert(15);
@@ -241,44 +236,10 @@ public class SplayTree {
 		t.insert(6);
 		t.insert(20);
 		t.insert(25);
-		
-		
-        System.out.println("Inserts complete");
-		
+
+		System.out.println("Inserts complete");
+
 		t.traverse();
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
