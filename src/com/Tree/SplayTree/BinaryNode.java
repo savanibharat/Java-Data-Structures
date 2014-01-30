@@ -11,5 +11,12 @@ public class BinaryNode {
 		key=theKey;
 		left=right=null;
 	}
+	
+public void displayNode(){
+		
+		System.out.println(" { "+key+" } ");
+		
+	}
+	
 }
 
