@@ -1,10 +1,13 @@
 package com.Sorting;
 
+import java.util.Random;
+
 public class Quicksort {
 
 	private int[] numbers;
 	private int number;
-
+	Random rand=new Random();
+	
 	public void sort(int[] values) {
 		// check for empty or null array
 		if (values == null || values.length == 0) {
@@ -18,8 +21,9 @@ public class Quicksort {
 
 	private void quicksort(int low, int high) {
 		int i = low, j = high;
-		// Get the pivot element from the middle of the list
-		int pivot = numbers[low + (high - low) / 2];
+		// Get the pivot element from the middle of te list
+		//int pivot = numbers[low + (high - low) / 2];
+		int pivot=numbers[rand.nextInt(numbers.length)];
 
 		// Divide into two lists
 		while (i <= j) {
