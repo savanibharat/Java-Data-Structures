@@ -25,6 +25,7 @@ public class HonersRule {
 		char[] ch=s.toCharArray();
 		for (int i = s.length()-1; i >= 0; i--) {
 			h=(ch[i]+128*h)%127;
+			System.out.println("ch[i] is "+ch[i]+"  "+(ch[i]+128*h));
 			System.out.println(h);
 		}
 		System.out.println(h);
