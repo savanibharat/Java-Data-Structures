@@ -5,17 +5,10 @@ public class XRowYColOptimize {
 	public static void main(String[] args) {
 
 		int[][] list = { { 0, 1 }, { 1, 0 }, { 1, 2 } };
-		// 00
-		// 01
-		// 10 2
-		// 11 3
 		int[][] arr = { { 1, 1, 1 }, { 1, 1, 1 }, { 1, 1, 1 } };
 		setArray(list,arr);
-//		setZero(arr, list);
-
 	}
-	
-	
+
 	public static void setArray(int[][] list,int[][] arr){
 		
 		for (int i = 0; i < list.length; i++) {

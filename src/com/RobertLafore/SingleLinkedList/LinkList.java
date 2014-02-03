@@ -85,5 +85,22 @@ public class LinkList {
 		}
 
 	}
+	public void sort(){
+	Link pn = first; // previous to n
+	for(Link n=first.next; n != null; n = n.next) {
+		Link pi = null; // previous to i
+		Link i;
+	  for(i = first; i != n && i.iData < n.iData; i = i.next) 
+	    pi = i;
+	  // change pointers from pi -> i and pn -> n -> n.next
+	  // to pi->n->i and pn->n.next
+	  if(pi == null) 
+		  first = n;
+	  else pi.next = n;
+	  pn.next = n.next;
+	  n.next = i;
+	  pn = n;
+	  }
+	}
 
 }

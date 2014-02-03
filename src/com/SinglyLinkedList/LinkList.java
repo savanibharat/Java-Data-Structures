@@ -39,14 +39,16 @@ public class LinkList {
 		return linkReference;
 	}
 	public void display(){
-		
+		int count=0;
 		Link theLink=firstLink;
 		while(theLink!=null){
-			
+			count++;
 			theLink.display();System.out.println("Next link "+theLink.next);
 			theLink=theLink.next;
 			System.out.println();
 		}
+		System.out.println("Total nodes are "+count);
+		System.out.println();
 	}
 	public Link find(String bookName){
 		
