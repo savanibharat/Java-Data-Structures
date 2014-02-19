@@ -14,7 +14,7 @@ public class HonersRule {
 			//hashing(manyStrings.get(i));
 		
 		}
-		hashing("abcd");
+		hashing("pat");
 		//hashing("bharat");
 
 		
@@ -23,13 +23,15 @@ public class HonersRule {
 		
 		int h=0;
 		char[] ch=s.toCharArray();
+		int sum=0;
 		for (int i = s.length()-1; i >= 0; i--) {
 			h=(ch[i]+128*h)%127;
+			sum=sum+h;
 			System.out.println("ch[i] is "+ch[i]+"  "+(ch[i]+128*h));
 			System.out.println(h);
 		}
 		System.out.println(h);
-		
+		System.out.println(sum);
 	}
 	
 }

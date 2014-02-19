@@ -1,4 +1,4 @@
-
+/*
 public class ArrayStack 
 {
 	boolean [] freeIndex;
@@ -91,3 +91,4 @@ public class ArrayStack
 	}
 
 }
+*/
