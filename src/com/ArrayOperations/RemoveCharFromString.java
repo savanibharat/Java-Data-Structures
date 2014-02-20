@@ -4,7 +4,7 @@ public class RemoveCharFromString {
 
 	public static void main(String[] args) {
 
-		String str = "abcadfaaderaagghfdr";
+		String str = "ansbdabbsdbabsbabab";
 		StringBuffer strBuffer = new StringBuffer();
 		char[] ch = str.toCharArray();
 		for (int i = 0; i < ch.length; i++) {
