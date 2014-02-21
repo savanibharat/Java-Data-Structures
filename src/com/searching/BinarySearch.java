@@ -3,10 +3,10 @@ package com.Searching;
 
 public class BinarySearch {
 	public static void main(String args[]){
-
-		int list[]={11,12,13,14,15,16,17,18,19,20};
+		int list[]={11,12,12,12,15,16,17,18,19,20};
+		int list1[]={11,12,13,14,15,16,17,18,19,20};
 		System.out.println("Numbers in list "+list);
-		int key=14;
+		int key=12;
 		int first=0;
 		int last=list.length-1;
 		int mid;
