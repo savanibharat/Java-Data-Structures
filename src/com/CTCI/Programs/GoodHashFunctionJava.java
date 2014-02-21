@@ -1,14 +1,35 @@
 package com.CTCI.Programs;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class GoodHashFunctionJava {
 	
 	static int i;
+	static Map<Integer,Integer> result=new HashMap<Integer,Integer>();
+	static List<Integer> arr=new ArrayList<Integer>();
 	public static void main(String[] args) {
 		
 		for (int i = 0; i < 100; i++) {
 			
 			hashIt(i);
 		}
+		//System.out.println(arr);
+		histogram(arr);
+	}
+	public static void histogram(List<Integer>arr){
+		boolean unique=true;
+		for (Integer i:arr){
+			
+            if (result.containsKey(i)){
+            	result.put(i, result.get(i)+1);
+            	unique=false;
+            }
+            else result.put(i, 1);
+		}
+		System.out.println(unique);
 		
 	}
 	public static void hashIt(int h){
@@ -16,8 +37,11 @@ public class GoodHashFunctionJava {
 		h ^= (h >>> 20) ^ (h >>> 12);
 		// System.out.println(h);
 		int a = h ^ (h >>> 7) ^ (h >>> 4);
-		System.out.println("for i = " + i + " " + a);
+		//System.out.println("for i = " + i + " " + a);
+		arr.add(a);
+		
 		i++;
+		
 		
 	}
 	
