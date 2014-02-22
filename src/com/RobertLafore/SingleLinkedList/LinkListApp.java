@@ -17,7 +17,7 @@ public class LinkListApp {
 		theLinkList.insertFirst(32, 4.4);
 		
 		theLinkList.displayList();
-		theLinkList.sort();
+		//theLinkList.sort();
 		theLinkList.displayList();
 		/*Link f = theLinkList.find(22);
 		if (f != null)
