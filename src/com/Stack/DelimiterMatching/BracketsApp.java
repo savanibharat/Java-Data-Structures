@@ -13,7 +13,8 @@ public class BracketsApp {
 		
 			System.out.println("Enter String containing delimiters ");
 			System.out.flush();
-			input=getString();
+			//input=getString();
+			input="{{{}}}[[[]]]";
 			if(input.equals("")){
 				break;
 			}
