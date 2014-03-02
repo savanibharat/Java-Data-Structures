@@ -3,7 +3,7 @@ package com.Recursion.BinarySearchTree;
 public class Tree {
 
 	private Node root;
-
+	static int sum=0;
 	public Tree() {
 
 		root = null;
@@ -67,6 +67,33 @@ public class Tree {
 		inOrder(root);
 
 	}
+	public void reverseInordertraverse() {
+
+		reverseInOrder(root);
+
+	}
+	
+	
+	public void sumofAllGreater(){
+		
+		sumofallgreater(root);
+		
+	}
+	public void sumofallgreater(Node root)
+    {
+        if(root==null)
+            return;
+        sumofallgreater(root.rightChild);
+        
+        sum+=root.iData;
+        System.out.println("root.idata is "+root.iData);
+        System.out.println("sum is "+sum);
+        root.iData=sum-root.iData;
+        System.out.println("root.iData=sum-root.iData :: new root.idata is "+root.iData);
+        System.out.println();
+        sumofallgreater(root.leftChild);
+        
+    }
 
 	public void inOrder(Node localRoot) {
 
@@ -75,6 +102,16 @@ public class Tree {
 			inOrder(localRoot.leftChild);
 			localRoot.displayNode();
 			inOrder(localRoot.rightChild);
+
+		}
+	}
+	public void reverseInOrder(Node localRoot) {
+
+		if (localRoot != null) {
+
+			inOrder(localRoot.rightChild);
+			localRoot.displayNode();
+			inOrder(localRoot.leftChild);
 
 		}
 	}
