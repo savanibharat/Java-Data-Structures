@@ -4,7 +4,7 @@ class FactorOfInteger{
 
 	public static void main (String[] args){
 		//printFactors(12);
-		printDivisors(1024);
+		printDivisors(16);
 	}
 
 	static void printDivisors(int n){
