@@ -3,6 +3,8 @@ package com.ArrayOperations;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Collections;
+
 public class Histogram{
 	
 	public static void main(String[] args){
@@ -15,7 +17,6 @@ public class Histogram{
 	        }
 	        for (int i: result.keySet()) 
 	        	System.out.println(i + ":" + result.get(i));
-		
 		
 	}
 	
