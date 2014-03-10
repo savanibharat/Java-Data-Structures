@@ -6,7 +6,7 @@ public class SubArrayMaxSum {
 
 		int[] arr1 = { -2, -3, 4, -1, -2, 1, 5, -3 };
 		int[] arr2 = { -1, 2, -3, 2, 0, 5, -11 };
-		int arr[] = {1,2,3,-9,10 };
+		int arr[] = {5,-1,2,6,7 };
 		int max = maxScan(arr);
 		System.out.println(max);
 
