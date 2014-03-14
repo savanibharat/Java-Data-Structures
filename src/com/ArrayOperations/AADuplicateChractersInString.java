@@ -7,8 +7,8 @@ public class AADuplicateChractersInString {
 	public static void main(String[] args) {
 
 		String str = "bharataryan";
-		String sss=str.replaceAll("(.)(?=.*\\1)", "");
-		char[] g=sss.toCharArray();
+		String sss = str.replaceAll("(.)(?=.*\\1)", "");
+		char[] g = sss.toCharArray();
 		removeDuplicates(str);
 		LinkedHashMap<Character, Integer> map = new LinkedHashMap<Character, Integer>();
 		char[] ch = str.toCharArray();
@@ -28,6 +28,18 @@ public class AADuplicateChractersInString {
 		System.out.println(s);
 	}
 
-	
-	
+	public static void removeDuplicates(String str) {
+
+		int length = str.length();
+		String newStr = "";
+		for (int i = 0; i < length; i++) {
+
+			if (!newStr.contains(str.charAt(i) + "")) {
+				newStr = newStr + str.charAt(i);
+			}
+		}
+		System.out.println(newStr);
+
+	}
+
 }
