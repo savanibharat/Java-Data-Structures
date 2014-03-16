@@ -79,8 +79,6 @@ public class AABSTPathSum {
 			printSubTreePreOrder(p.right);
 	}
 
-	
-
 	private void printPath(Stack<Node> path) {
 		System.out.print("\nFind Path:");
 		for (Node n : path) {
@@ -88,7 +86,32 @@ public class AABSTPathSum {
 		}
 	}
 
-		
+	public void printAllPathWithSum(int sum) {
+		Stack<Node> path = new Stack<Node>();
+		findPath(root, sum, path);
+	}
+
+	private void findPath(Node p, int value, Stack<Node> path) {
+		if (p == null)
+			return;
+		if (p.data == value) {
+			path.push(p);
+			printPath(path);
+			path.pop();
+		} else {
+			path.push(p);
+			if (p.left != null)
+				findPath(p.left, value - p.data, path);
+			if (p.right != null)
+				findPath(p.right, value - p.data, path);
+			path.pop();
+		}
+		if (p.left != null)
+			findPath(p.left, value, path);
+		if (p.right != null)
+			findPath(p.right, value, path);
+	}
+
 	/**
 	 * @param args
 	 */
@@ -103,13 +126,16 @@ public class AABSTPathSum {
 		tree.insertNode(20);
 		tree.insertNode(8);
 
-		/*
-		 * tree.printAllPathWithSum(1); tree.printAllPathWithSum(0);
-		 * tree.printAllPathWithSum(16); tree.printAllPathWithSum(9);
-		 */
+		
+		tree.printAllPathWithSum(1); tree.printAllPathWithSum(0);
+		tree.printAllPathWithSum(16); tree.printAllPathWithSum(9);
 		System.out.println();
-		//tree.printAllPathToLeafNonRecursive();
-		//tree.printAllPathToLeafNonRecursive();
+		// tree.printAllPathToLeafNonRecursive();
+		// tree.printAllPathToLeafNonRecursive();
 	}
 
 }
+/*
+
+
+ */
