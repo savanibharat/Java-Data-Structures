@@ -112,6 +112,68 @@ public class AABSTPathSum {
 			findPath(p.right, value, path);
 	}
 
+	public void printAllPathToLeafNonRecursive() {
+
+		printAllPathToLeafNonRecursive(root);
+
+	}
+
+	public void printAllPathToLeafNonRecursive(Node root) {
+
+		if (root == null) {
+			return;
+		}
+
+		Queue<Object> q = new LinkedList<Object>();
+		q.add(root);
+		q.add(root.data + "");
+		int add = 0;
+		int a[] = new int[20];
+		int j = 0;
+		while (!q.isEmpty()) {
+
+			Node head = (Node) q.poll();
+			String headPath = (String) q.poll();
+
+			if (head.isLeaf(head)) {
+				System.out.println(headPath + " ");
+				String s[] = headPath.split("->");
+				int pathSum = 0;
+				for (int i = 0; i < s.length; i++) {
+					pathSum = pathSum + Integer.valueOf(s[i]);
+				}
+				a[j] = pathSum;
+				j++;
+				System.out.println("Path sum is " + pathSum);
+				continue;
+			}
+
+			if (head.left != null) {
+				String leftStr = headPath + "->" + head.left.data;
+
+				q.add(head.left);
+				q.add(leftStr);
+			}
+
+			if (head.right != null) {
+				String rightStr = headPath + "->" + head.right.data;
+				// add=add+head.right.data;
+				q.add(head.right);
+				q.add(rightStr);
+			}
+		}
+		int max = 0;
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] > 0) {
+				max = a[i];
+				if (max < a[i])
+					max = a[i];
+			}
+		}
+		System.out.println(max + "is max");
+
+	}
+
 	/**
 	 * @param args
 	 */
@@ -130,12 +192,20 @@ public class AABSTPathSum {
 		tree.printAllPathWithSum(1); tree.printAllPathWithSum(0);
 		tree.printAllPathWithSum(16); tree.printAllPathWithSum(9);
 		System.out.println();
-		// tree.printAllPathToLeafNonRecursive();
-		// tree.printAllPathToLeafNonRecursive();
+		tree.printAllPathToLeafNonRecursive();
 	}
 
 }
 /*
-
+ * printAllPathToLeafNonRecursive()
+ * 
+ * 
+10->20 
+Path sum is 30
+10->5->1 
+Path sum is 16
+10->5->6->9->8 
+Path sum is 38
+38is max
 
  */
