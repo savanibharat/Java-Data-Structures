@@ -4,7 +4,7 @@ public class AAStringHistogram {
 
 	public static void main(String[] args) {
 		
-		String str="saiudfaiusgaufadgye";
+		String str="abcab";
 		for (int i = 0; i < str.length(); i++) {
 			//System.out.println((int)str.charAt(i));
 		}
@@ -17,8 +17,10 @@ public class AAStringHistogram {
 		}
 		
 		for (int i = 0; i < a.length; i++) {
-			if(a[i]>0)
+			if(a[i]==1){
 				System.out.println((char)i+" "+i+" "+a[i]);
+				break;
+			}
 		}
 	}
 }
