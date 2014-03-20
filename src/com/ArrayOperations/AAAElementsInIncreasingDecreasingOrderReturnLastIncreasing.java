@@ -1,26 +1,34 @@
 package com.ArrayOperations;
 
 public class AAAElementsInIncreasingDecreasingOrderReturnLastIncreasing {
-
-	
-
+	public static int iter=0;
 		public static void main(String[] args){
-			int arr[] = {1,2,3,4,5,6,5,4,3,2,1};
+			int arr[] = {1,2,3,4,5,6,7,8,9,0};
 			System.out.println(searchLargest(arr,0,arr.length));
+			System.out.println(iter);
 		}
 		
-		public static int searchLargest(int[] arr,int start,int end){
-			int mid=0;
-			if(start <= end){
-				mid = (start+end)/2;
+		public static int searchLargest(int[] array,int start,int end){
+			
+			while ( start <= end){
 				
-				if((mid-1)>=0 && arr[mid-1] > arr[mid]){
-					 return searchLargest(arr,start,mid);
-				}else if((mid+1) < arr.length && arr[mid+1] >= arr[mid]){
-					 return searchLargest(arr,mid,end);
+				int mid = start + (end -start)/2;
+				if ( mid == array.length-1)return -1;
+				if(  array[mid] > array[mid-1] && array[mid] > array[mid+1]){
+					iter++;
+					return array[mid];
+					
 				}
+				else if( array[mid] < array[mid+1]){
+					start = mid+1;
+					iter++;
+				}
+				else if( array[mid] < array[mid-1]){
+					end = mid-1;
+					iter++;
+				}
+				iter++;
 			}
-			return arr[mid];
+			return -1;
 		}
-	
 }
