@@ -1,0 +1,23 @@
+We present a unique approach to data integrity algorithms Our definition of data integrity
+protection is inspired from and suitable for a stream cipher arrangement Short of a practical
+perfect algorithm according to the data integrity definition we propose a novel heuristic the
+Frogbit data integrity algorithm
+In this paper we introduce a unique definition of data integrity protection We propose an
+arrangement using double exclusive or (XOR) encryption and providing this new concept of
+data integrity protection Two applications of our arrangement are shown an impractical one
+conforming to our data integrity definition and the Frogbit heuristic that we propose as our main
+contribution
+A stream cipher operates on cleartext messages serially applying XOR encryption to each
+message bit It uses a pseudo-random bit generator (PR generator) for which the seed is derived
+from the cipher secret key Our definition of data integrity protection uses the bit-serial
+characteristic of a stream cipher Let us assume that a bit-serial cleartext message is encrypted
+into ciphertext by a sender and that a session key is established for this purpose The legitimate
+receiver decrypts the ciphertext and gets the recovered cleartext An adversary is given the
+opportunity to modify the ciphertext bits in transit from the sender to the receiver
+Definition We define a cipher that offers data integrity protection as one where the modification
+of a single bit in the ciphertext by the adversary forces the randomization of the
+remaining portion of the recovered cleartext
+We present a unique approach to data integrity algorithms Our definition of data integrity
+protection is inspired from and suitable for a stream cipher arrangement Short of a practical
+perfect algorithm according to the data integrity definition we propose a novel heuristic the
+Frogbit data integrity algorithm
