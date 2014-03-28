@@ -21,8 +21,8 @@ public class AAStringHashCode {
  
 			String sCurrentLine;
  
-			br = new BufferedReader(new FileReader("US.dic"));
-			bw=new BufferedWriter(new FileWriter("USHASH.txt"));
+			br = new BufferedReader(new FileReader("StringTokenizerInput1.txt"));
+			//bw=new BufferedWriter(new FileWriter("USHASH.txt"));
 			while ((sCurrentLine = br.readLine()) != null) {
 				
 				//System.out.println(sCurrentLine);
@@ -36,7 +36,7 @@ public class AAStringHashCode {
 				}
 				hashMap.put(hash,sCurrentLine);
 				total++;
-				bw.write(sCurrentLine+" "+hash+"\n");
+				//bw.write(sCurrentLine+" "+hash+"\n");
 			}
 			for(Long l:hashMap.keySet())
 			{
@@ -55,7 +55,7 @@ public class AAStringHashCode {
 		} finally {
 			
 			br.close();
-			bw.close();
+			//bw.close();
 			
 		}
 		
@@ -72,6 +72,7 @@ public class AAStringHashCode {
 				h =  31* h + val[i];
 			}
 			hash = h;
+			System.out.println(hash+"  "+str);
 		}
 		return hash;
 	}
