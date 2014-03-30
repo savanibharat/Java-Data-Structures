@@ -1,7 +1,10 @@
 package com.Tree.SplayTree;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class SplayTree {
-	private BinaryNode root;
+	private static BinaryNode root;
 
 	public SplayTree() {
 		root = null;
@@ -208,8 +211,9 @@ public class SplayTree {
 
 	public void traverse() {
 
-		inOrder(root);
-
+		//inOrder(root);
+		//preOrder(root);
+		printLevelOrderBFS(root);
 	}
 
 	public void inOrder(BinaryNode localRoot) {
@@ -223,21 +227,59 @@ public class SplayTree {
 		}
 	}
 
+	public void preOrder(BinaryNode localRoot) {
+
+		if (localRoot != null) {
+
+			
+			localRoot.displayNode();
+			preOrder(localRoot.left);
+			preOrder(localRoot.right);
+
+		}
+	}
+
+	public void printLevelOrderBFS(BinaryNode root){
+        Queue<BinaryNode> queue = new LinkedList<BinaryNode>();
+        queue.add(root);
+        int currentLevelCount = 1;
+        int nextLevelCount = 0;
+        
+        while(!queue.isEmpty()){
+            BinaryNode n = queue.remove();
+            System.out.print(n.key + " ");
+            if(n.left != null){
+                queue.add(n.left);
+                nextLevelCount++;
+            }
+            if(n.right != null){
+                queue.add(n.right);
+                nextLevelCount++;
+            }
+            currentLevelCount--;
+            if(currentLevelCount == 0){
+                System.out.println("");
+                currentLevelCount = nextLevelCount;
+                nextLevelCount = 0;
+            }
+        }
+    }
+	
+	
 	public static void main(String[] args) {
 
 		SplayTree t = new SplayTree();
 
-		t.insert(10);
-		t.insert(5);
-		t.insert(15);
-		t.insert(1);
-		t.insert(6);
-		t.insert(20);
-		t.insert(25);
+		for (int i = 1; i < 11; i++) {
+			t.insert(i);
+			//t.traverse();
+			System.out.println();
+		}
 
 		System.out.println("Inserts complete");
 
-		t.traverse();
+		//t.traverse();
+		t.printLevelOrderBFS(root);
 	}
 
 }
