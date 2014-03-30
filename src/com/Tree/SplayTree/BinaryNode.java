@@ -14,7 +14,7 @@ public class BinaryNode {
 	
 public void displayNode(){
 		
-		System.out.println(" { "+key+" } ");
+		System.out.print(" { "+key+" } ");
 		
 	}
 	
