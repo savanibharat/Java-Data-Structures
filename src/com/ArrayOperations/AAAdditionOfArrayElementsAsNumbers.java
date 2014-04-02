@@ -7,7 +7,7 @@ public class AAAdditionOfArrayElementsAsNumbers {
 		 * int a[] = { 1, 2, 8 }; int b[] = { 1, 2, 9 };
 		 */
 		int a[] = { 1, 2, 88 };
-		int b[] = { 1, 2, 99 };
+		int b[] = { 1, 2, 10000 };
 
 		int aa=add(a);
 		int bb=add(b);
