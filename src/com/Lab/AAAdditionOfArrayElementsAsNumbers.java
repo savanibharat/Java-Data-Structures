@@ -2,6 +2,11 @@ package com.Lab;
 
 public class AAAdditionOfArrayElementsAsNumbers {
 
+	/**
+	 * The main method.
+	 *
+	 * @param args the args
+	 */
 	public static void main(String[] args) {
 		/*
 		 * int a[] = { 1, 2, 8 }; int b[] = { 1, 2, 9 };
