@@ -19,7 +19,8 @@ public class UniqueWordsHashMap {
 				map.put(count[i],1);
 			
 		}
-		//for(int i=0;i<count.length;i++)
-		System.out.println(map);
+		for(Integer i :map.values())
+			if(i==1)
+		System.out.println(i);
 	}
 }
